@@ -1,7 +1,6 @@
 # Kinematic Knowledge Mining and Hallucination Auditing of Multimodal Large Language Models for Martial-Arts Videos on Social Media
 
-Code, prompts, synthetic benchmark and result files for the paper of the same title.
-Repository: https://github.com/xxx/martial-kinematic-audit
+
 
 [English](#english) | [中文](#中文)
 
