@@ -1,0 +1,23 @@
+# Storage locations used by the pipeline.
+#
+# Relative paths are resolved against the repository root. Every entry can be overridden by an environment
+# variable (which takes precedence over this file); relative values given through environment variables are
+# resolved against the current working directory:
+#
+#   data_root    MKA_DATA_ROOT     raw datasets (Kyokushin, UMONS-TAICHI, hmdb51, UCF101); see data/README.md
+#   work_dir     MKA_WORK_DIR      derived data: skeleton/descriptor tables, normalised sequences, video index,
+#                                  projected 2D skeletons, LOSO predictions
+#   cache_dir    MKA_CACHE_DIR     caches: 2D poses, VideoMAE features, rendered synthetic videos,
+#                                  synthetic pre-training weights
+#   hf_cache     MKA_HF_CACHE      Hugging Face model cache (empty = <cache_dir>/hf)
+#   results_dir  MKA_RESULTS_DIR   result tables (CSV / JSON) that feed the paper
+#   figures_dir  MKA_FIGURES_DIR   paper figures (PDF + PNG)
+#
+# A different YAML file can be selected with MKA_CONFIG=/path/to/paths.yaml.
+
+data_root: ./data/raw
+work_dir: ./work
+cache_dir: ./cache
+hf_cache: ""
+results_dir: ./results
+figures_dir: ./figures
