@@ -1,0 +1,12 @@
+# conda environment for the pipeline; create it from the repository root:
+#   conda env create -f environment.yml
+#   conda activate mkaudit
+# All Python packages are pinned in requirements.txt and installed with pip.
+name: mkaudit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements.txt
